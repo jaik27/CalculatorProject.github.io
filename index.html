@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/Lab07.css" rel="stylesheet">
+        <meta name="author" content="Bambang">
+        <meta charset="utf-8">
+        <script src="script/script.js"></script>
+    </head>
+    <body>
+    <section id="myCalculator">
+
+        <header>
+
+            <div class="heading">My calculator</div>
+
+        </header>
+
+        <footer>
+
+            <textarea id="result">
+
+            </textarea>
+
+        </footer>
+
+    </section>
+
+
+
+
+    <section id="inputArea">
+
+        <header>
+
+            <div class="heading">
+
+                Input
+
+            </div>
+
+        </header>
+
+        <footer>
+
+            <form class="form" name="inputForm" action="" method="GET">
+
+                <label>Operands:</label>
+
+
+                <input type="text" name="firstValue" id="fvalue" size="4" required>
+
+                <input type="text" name="secondValue" id="svalue" size="4" required><br>
+
+                <div class="submitButtons">
+
+                    <label>Operator:</label>
+
+                    <input type="button" value="+" onclick="solution('add')">
+
+                    <input type="button" value="&times;" onclick="solution('multiply')">
+
+
+                    <input type="button" value="/" onclick="solution('divide')">
+
+                    <input type="button" value="clear" onclick="clr()">
+
+                </div>
+
+            </form>
+
+        </footer>
+
+    </section>
+    </body>
+</html>
